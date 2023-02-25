@@ -2,6 +2,8 @@
 <html lang="eng">
 
 <head>
+    <link rel="stylesheet" href="estilos.css">
+
     <title>Primeira página</title>
     <link rel="icon" href="images/UlmFlagge.png">
     <meta charset="utf-8">
@@ -29,6 +31,7 @@
         <a href="local.html">Localization</a>
         <a href="multimedia.html">Multimedia</a>
         <a href="info.html">Information</a>
+        <a href="quizz.html"><b>Quizz</a></b>
     </nav>
 
     <main>
@@ -37,7 +40,7 @@
         </section>
         <section>
             <p>
-                On this page you will be facing a quizz about the city of <span style="font-size: larger; color: red; font-weight: bold;">Ulm</span>.
+                On this page you will be facing a quizz about the city of <span class = "important" style="color: red;">Ulm</span>.
             </p>
         </section>
 
@@ -46,9 +49,9 @@
         <section>
             <form action="form.html" method="POST" action="mailto: diogo.m.rodrigues2003@gmail.com" enctype="multipart/form-data">
                 <fieldset>
-                    Do you know <b>Ulm</b> well enough to succeed?
+                    Do you know <span class = "important">Ulm</span> well enough to succeed?
                     <fieldset>
-                        <u>info</u>
+                        <u> info</u>
                         <br>
                         <input type="text" placeholder="First Name">
                         <input type="text" placeholder="Last Name">
@@ -113,7 +116,7 @@
                         <fieldset>
                             8. What is an example of a Zip Code for Ulm? <br>
                             <input type="text" id="country_code" name="country_code" pattern="89[0-9]{3}" title="89xxx"
-                                autocomplete="off"><br>
+                                autocomplete="off">
                             <input type="submit">
                         </fieldset>
                         <fieldset>
@@ -148,10 +151,10 @@
 
                 </fieldset>
                 <br>
-                Click the button to get the get the Solutions to the quizz
-                <p onclick="getSolutions()"><button>get Solutions</button></p>
-                <div id="Solutions" style="background-color: black; color: black;">
-
+                Hover over the <b>black square</b> to the Solutions to the quizz
+                <br>
+                <div  class="solutions" style="background-color: black;" >
+                    <span class="solutionstext" style="color:white; background-color: black;" >
                     1. Donau <br>
                     2. Neu-Ulm <br>
                     3. Sparrow <br>
@@ -161,13 +164,14 @@
                     7. Black and White <br>
                     8. 89123 for example, it has to start with 89 and have 3 more numbers <br>
                     9. Olaf Scholz <br>
-                    10. 10
-                    11. - <br>
+                    10. 10 <br>
+                    11. - <br></span>
 
                 </div>
                 <script>
                     function getSolutions() {
-                        document.getElementById("Solutions").style.backgroundColor = "white";
+                        document.getElementById("Solutions").style.backgroundColor = "rgb(31, 29, 29)";
+                        document.getElementById("Solutions").style.color = "white";
                     }
                 </script>
 

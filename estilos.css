@@ -1,0 +1,48 @@
+* {
+    color: white;
+    background-color: rgb(31, 29, 29);
+    font-family: Arial;
+}
+
+button {
+    background-color: rgb(31, 29, 29);
+    border-color: white
+}
+
+input {
+    background-color: rgb(31, 29, 29);
+    border-color: white
+}
+
+.important {
+    font-size: larger;
+    font-weight: bold;
+}
+
+div > p{color : pink}
+div ~ p{color:aqua}
+ 
+.solutions {
+    display: inline-block;
+}
+
+.solutions .solutionstext{
+    visibility: hidden;   
+}
+
+.solutions:hover .solutionstext{
+    visibility: visible;
+}
+
+.special::first-line { color: yellow;font-size: larger;} /*THIS ONE DONT WORK*/
+
+#jail {
+    font-family: 'Courier New', Courier, monospace;
+    color: yellow;
+}
+
+a {
+    background-color: rgb(31, 29, 29);
+    color: rgb(149, 202, 245);
+}[href*] 
+
