@@ -37,7 +37,7 @@
         </section>
         <section>
             <p>
-                On this page you will be facing a quizz about the city of Ulm.
+                On this page you will be facing a quizz about the city of <span style="font-size: larger; color: red; font-weight: bold;">Ulm</span>.
             </p>
         </section>
 
@@ -150,7 +150,7 @@
                 <br>
                 Click the button to get the get the Solutions to the quizz
                 <p onclick="getSolutions()"><button>get Solutions</button></p>
-                <p id="Solutions" style="background-color: black; color: black;">
+                <div id="Solutions" style="background-color: black; color: black;">
 
                     1. Donau <br>
                     2. Neu-Ulm <br>
@@ -164,7 +164,7 @@
                     10. 10
                     11. - <br>
 
-                </p>
+                </div>
                 <script>
                     function getSolutions() {
                         document.getElementById("Solutions").style.backgroundColor = "white";
