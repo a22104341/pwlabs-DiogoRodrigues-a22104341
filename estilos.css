@@ -19,30 +19,121 @@ input {
     font-weight: bold;
 }
 
-div > p{color : pink}
-div ~ p{color:aqua}
- 
+.questions {
+    background-color: purple;
+}
+
+.info {
+    background-color: greenyellow;
+}
+
+.bg {
+    background-color: green;
+}
+
+.one {
+    background-color: aliceblue;
+}
+
+/*i didnt want to have this many colors :,) */
+.two {
+    background-color: blue;
+}
+
+.three {
+    background-color: rgb(61, 7, 7);
+}
+
+.four {
+    background-color: rgb(15, 33, 49);
+}
+
+.five {
+    background-color: rgb(30, 61, 54);
+}
+
+.six {
+    background-color: rgb(40, 54, 6);
+}
+
+.seven {
+    background-color: rgb(72, 50, 75);
+}
+
+.eight {
+    background-color: rgb(90, 53, 6);
+}
+
+.nine {
+    background-color: rgb(65, 7, 40);
+}
+
+.ten {
+    background-color: rgb(51, 65, 78);
+}
+
+.feedback {
+    background-color: rgb(53, 77, 38);
+}
+
+div>p {
+    color: pink
+}
+
+div~p {
+    color: aqua
+}
+
 .solutions {
     display: inline-block;
 }
 
-.solutions .solutionstext{
-    visibility: hidden;   
+.solutions .solutionstext {
+    visibility: hidden;
 }
 
-.solutions:hover .solutionstext{
+.solutions:hover .solutionstext {
     visibility: visible;
 }
 
-.special::first-line { color: yellow;font-size: larger;} /*THIS ONE DONT WORK*/
+.special::first-line {
+    color: yellow;
+    font-size: larger;
+}
+
+/*THIS ONE DONT WORK*/
 
 #jail {
     font-family: 'Courier New', Courier, monospace;
     color: yellow;
 }
 
-a {
+::before a:link {
     background-color: rgb(31, 29, 29);
     color: rgb(149, 202, 245);
-}[href*] 
+}
 
+a:visited {
+    background-color: rgb(31, 29, 29);
+    color: rgb(149, 202, 245);
+    ;
+}
+
+a:hover {
+    background-color: rgb(31, 29, 29);
+    color: blue;
+}
+
+a:active {
+    background-color: rgb(31, 29, 29);
+    color: rgb(59, 37, 100);
+}
+
+h1::before {
+    content: "-"
+}
+
+/*making these appear with the menu only, i cant find anything besides functions on the internet and i dont know how to do those */
+h1::after {
+    content: "-"
+}

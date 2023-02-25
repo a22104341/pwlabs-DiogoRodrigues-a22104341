@@ -27,11 +27,12 @@
     <br>
 
     <nav>
-        <a href="index.html">Introduction</a>
-        <a href="local.html">Localization</a>
-        <a href="multimedia.html">Multimedia</a>
-        <a href="info.html">Information</a>
-        <a href="quizz.html"><b>Quizz</a></b>
+        <a href="index.html">😊Introduction</a>
+        <a href="local.html">🗺️Localization</a>
+        <a href="multimedia.html">📷Multimedia</a>
+        <a href="info.html">🧐Information</a>
+        <a href="html5-css.html">👨‍💻html5-css</a>
+        <a href="quizz.html"><b>📝Quizz</a></b>
     </nav>
 
     <main>
@@ -48,18 +49,18 @@
 
         <section>
             <form action="form.html" method="POST" action="mailto: diogo.m.rodrigues2003@gmail.com" enctype="multipart/form-data">
-                <fieldset>
+                <fieldset class = "bg">
                     Do you know <span class = "important">Ulm</span> well enough to succeed?
-                    <fieldset>
+                    <fieldset class = "info">
                         <u> info</u>
                         <br>
                         <input type="text" placeholder="First Name">
                         <input type="text" placeholder="Last Name">
                         <input type="email" placeholder="E-mail">
                     </fieldset>
-                    <fieldset>
+                    <fieldset class = "questions">
                         <u>questions</u>
-                        <fieldset>
+                        <fieldset class = "one">
                             <label for="lake">1. What is the longest river, that passes by Ulm?</label>
                             <input list="lakes" name="lake" id="lake">
 
@@ -71,7 +72,7 @@
                                 <option value="Indus">
                             </datalist>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class = "two">
                             2. What is the name of a neighbouring city?
                             <input type="radio" name="1">
                             <label for="1">Nulm</label>
@@ -82,7 +83,7 @@
                             <input type="radio" name="1">
                             <label for="1">Alt-Ulm</label>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class = "three">
                             3. Which of these things are Ulm's city symbol ?
                             <label>
                                 <input type="checkbox"> Crow
@@ -97,35 +98,35 @@
                                 <input type="checkbox"> Church
                             </label>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class = "four">
                             4. When did the Falling House finish construction?
                             <input type="number">
                         </fieldset>
-                        <fieldset>
+                        <fieldset class = "five">
                             5. Send me your favorite pictures you find of Ulm <br>
                             <input type="file" multiple>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class = "six">
                             6. When was the Ulmer Münster completed? <br>
                             <input type="date">
                         </fieldset>
-                        <fieldset>
+                        <fieldset class = "seven">
                             7. Which two colors does the Flag of Ulm have? <br>
                             <input type="color"> <input type="text" placeholder="Color Nr.2">
                         </fieldset>
-                        <fieldset>
+                        <fieldset class = "eight">
                             8. What is an example of a Zip Code for Ulm? <br>
                             <input type="text" id="country_code" name="country_code" pattern="89[0-9]{3}" title="89xxx"
                                 autocomplete="off">
                             <input type="submit">
                         </fieldset>
-                        <fieldset>
+                        <fieldset class = "nine">
                             9. Put in the current German Prime Minister's Name:
                             <input type="name" placeholder="First Name" autocomplete="off" maxlength="10">
                             <input type="name" placeholder="Last Name" autocomplete="off" maxlength="10">
                         </fieldset>
-                        <fieldset>
-                            <label for="degrees">The Falling House is falling by how many degrees?:</label>
+                        <fieldset class = "ten">
+                            <label for="degrees">10.The Falling House is falling by how many degrees?:</label>
                             <select name="degrees" id="degrees">
                                 <option value="9">9</option>
                                 <option value="10">10</option>
@@ -133,8 +134,8 @@
                                 <option value="12">12</option>
                             </select>
                         </fieldset>
-                        <fieldset>
-                            10. How would you rate this Quizz?
+                        <fieldset class = "feedback">
+                            How would you rate this Quizz?
                             <br>
                             Bad
                             <input type="range" min="0" max="10" name="taxa" value="0"
