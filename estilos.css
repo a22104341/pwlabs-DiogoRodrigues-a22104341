@@ -35,6 +35,9 @@ input {
     background-color: aliceblue;
 }
 
+th:nth-child(even){background: purple;} /*tr doesnt work so i cant do this properly, nor does uneven*/
+td:nth-child(even){background: pink;}
+
 /*i didnt want to have this many colors :,) */
 .two {
     background-color: blue;
@@ -100,6 +103,12 @@ div~p {
     color: yellow;
     font-size: larger;
 }
+.special::first-letter {
+    color: red;
+    font-size: xx-large;
+}
+
+p.display{display: none;}
 
 /*THIS ONE DONT WORK*/
 
