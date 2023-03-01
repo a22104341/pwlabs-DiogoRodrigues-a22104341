@@ -7,5 +7,127 @@
 
 body{
     background-color: rgb(31, 29, 29);
-    border-color: white
+    border-color: white;
+    color: white
+}
+
+.header{
+    font-size: xx-large;
+    background-color: black;
+    width: 100vw;
+    height: 50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-paragraph{
+    position: relative;
+}
+
+.img-paragraph .imgSnow{
+    width: 100%;
+}
+
+.img-paragraph .paragraph{
+    color: yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container .capitais{
+    flex: display;
+    width: 100%;
+    background-color: white;
+    color: #000;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.topLeft{
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    background-color: white;
+    border-radius: 5px;
+    width: 30%;
+    
+}
+
+.top{
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    background-color: white;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.topRight{
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    background-color: white;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.left{
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.mid{
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.right{
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.botLeft{
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.bot{
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.botRight{
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    background-color: white;
+    border-radius: 5px;
+    flex-flow: wrap;
 }
