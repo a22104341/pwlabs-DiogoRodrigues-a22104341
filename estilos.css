@@ -1,4 +1,4 @@
-* {
+body {
     color: white;
     background-color: rgb(31, 29, 29);
     font-family: Arial;
@@ -35,10 +35,10 @@ input {
     background-color: aliceblue;
 }
 
-th:nth-child(2n){background: purple;} /*tr doesnt work so i cant do this properly, nor does uneven*/
-th:nth-child(2n+1){background: pink;}
-td:nth-child(2n+1){background: purple;}
-td:nth-child(2n){background: pink;}
+
+tr:nth-child(even) {
+    background-color: red !important;
+}
 
 /*i didnt want to have this many colors :,) */
 .two {
