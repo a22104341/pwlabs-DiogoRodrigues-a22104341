@@ -11,7 +11,7 @@ body{
     color: white
 }
 
-.header{
+.title{
     font-size: 70px;
     background-color: black;
     width: 100vw;
@@ -20,6 +20,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 
 .img-paragraph{
     position: relative;
@@ -142,9 +143,9 @@ body{
 .circle{
     height: 200px;
     width: 200px;
-    background-color: goldenrod;
+
     border-style:inset;
-    border-color: gray;
+    border-color: goldenrod;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -155,6 +156,7 @@ body{
     display: flex;
     align-items: center;
     justify-content:  center;
+    color: black;
 }
 
 .square {
@@ -179,9 +181,42 @@ body{
 
 .insideCircleImg{
     position: absolute;
-    opacity: 0.8;
+    opacity: 1;
     clip: rect(0px,200px,200px,0px);
     border-radius: 60%;
 }
+
+.circle img:hover{
+    /*z-index: -1; this makes the image flicker i dont know why*/
+    opacity: 0.5;
+}
+
+.circle p{
+    color: goldenrod;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.square:hover + .hiddenHover{
+    display: block;
+    
+}
+
+.hiddenHover{
+    display: none;
+    align-items: center;
+}
+
+.stickyHeader{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border:3px solid goldenrod;
+    background-color: rgb(29, 29, 29);
+    z-index: 1;
+    width: 15vw;
+    height: 20vh;
+}
+
 
 
