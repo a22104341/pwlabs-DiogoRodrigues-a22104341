@@ -214,9 +214,22 @@ body{
     border:3px solid goldenrod;
     background-color: rgb(29, 29, 29);
     z-index: 1;
-    width: 15vw;
-    height: 20vh;
+    width: 20vw;
+    height: 22vh;
+    justify-content: space-between;
+    padding: 20px;
 }
 
+.stickyHeader a{
+    text-decoration: none;
+    color: white;
+    transition-timing-function: ease-in;
+    transition-property: all;
+    transform-origin: left;
+    transition-duration: 0.4s;
+}
 
-
+.stickyHeader a:hover{
+    background-color: rgba(211, 211, 211, 0.5);
+    font-weight: bold;
+}
