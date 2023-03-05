@@ -14,7 +14,6 @@ body{
 .title{
     font-size: 70px;
     background-color: black;
-    width: 100vw;
     height: 50vh;
     display:flex;
     justify-content: center;
@@ -214,7 +213,6 @@ body{
     border:3px solid goldenrod;
     background-color: rgb(29, 29, 29);
     z-index: 1;
-    width: 20vw;
     height: 22vh;
     justify-content: space-between;
     padding: 20px;
@@ -234,23 +232,29 @@ body{
     font-weight: bold;
 }
 
-.container .item1{
+.item1{
     grid-area: header;
 }
 
-.container div .item2{
+.item2{
     grid-area: nav;
+    background-image: url('../lab3/imagesLab3/compass.png');
+    background-size:cover;
 }
 
-.container div .item3{
+.item3{
     grid-area: main;
+    background-color: goldenrod;
 }
 
-.container div .item4{
+.item4{
     grid-area: otherOptions;
+    color: goldenrod;
+    background-image: url('../lab3/imagesLab3/roadBackGround.jpg');
+    background-size:cover;
 }
 
-.container .item5{
+.item5{
     font-size: 18px;
     background-color: black;
     width: 100%;
@@ -262,12 +266,14 @@ body{
     grid-area: footer;
 }
 
-body .grid-container{
+.grid-container{
     display: grid;
     grid-template-areas: 
-    'nav nav nav'
-    'header header header'
+
+    'nav header header'
     'main main main'
     'otherOptions otherOptions otherOptions'
     'footer footer footer';
+
+    grid-template-columns: 1fr 7fr;
 }
