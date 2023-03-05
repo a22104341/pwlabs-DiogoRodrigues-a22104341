@@ -233,3 +233,41 @@ body{
     background-color: rgba(211, 211, 211, 0.5);
     font-weight: bold;
 }
+
+.container .item1{
+    grid-area: header;
+}
+
+.container div .item2{
+    grid-area: nav;
+}
+
+.container div .item3{
+    grid-area: main;
+}
+
+.container div .item4{
+    grid-area: otherOptions;
+}
+
+.container .item5{
+    font-size: 18px;
+    background-color: black;
+    width: 100%;
+    height: 7vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: goldenrod;
+    grid-area: footer;
+}
+
+body .grid-container{
+    display: grid;
+    grid-template-areas: 
+    'nav nav nav'
+    'header header header'
+    'main main main'
+    'otherOptions otherOptions otherOptions'
+    'footer footer footer';
+}
