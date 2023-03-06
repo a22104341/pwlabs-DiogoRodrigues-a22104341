@@ -266,6 +266,11 @@ body{
     grid-area: footer;
 }
 
+.item5 a{
+    text-decoration: none;
+    color: goldenrod;
+}
+
 .itemPic{
     grid-area: pic;
 }
@@ -275,9 +280,9 @@ body{
     grid-template-areas: 
 
     'nav header header'
-    'nav pic pic'
-    'nav main main'
-    'nav otherOptions otherOptions'
+    'pic pic pic'
+    'main main main'
+    'otherOptions otherOptions otherOptions'
     'footer footer footer';
 
     grid-template-columns: 4fr 13fr 13fr;

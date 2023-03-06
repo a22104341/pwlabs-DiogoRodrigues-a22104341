@@ -270,6 +270,11 @@ body{
     grid-area: pic;
 }
 
+.item5 a{
+    text-decoration: none;
+    color: pink;
+}
+
 .grid-container{
     display: grid;
     grid-template-areas:

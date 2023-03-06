@@ -6,9 +6,9 @@
 }
 
 body{
-    background-color: rgb(31, 29, 29);
+    background-image: url('https://source.unsplash.com/random/3920x3080/?austria,snow,mountains');
     border-color: white;
-    color: white
+    color: grey
 }
 
 .title{
@@ -41,7 +41,7 @@ body{
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: space-around;
-    background-color: white;
+    background-color: goldenrod;
     padding: 50px;
     color: #000;
 }
@@ -64,7 +64,7 @@ body{
 
 .container .capitais div div:last-child {
     width: 380px;
-    background-color: white;
+    background-color: grey;
     padding: 20px;
     border-radius: 0 20px 20px 0;
     display: flex;
@@ -266,14 +266,24 @@ body{
     grid-area: footer;
 }
 
+.item5 a{
+    text-decoration: none;
+    color: goldenrod;
+}
+
+.itemPic{
+    grid-area: pic;
+}
+
 .grid-container{
     display: grid;
     grid-template-areas: 
 
     'nav header header'
-    'main main main'
-    'otherOptions otherOptions otherOptions'
-    'footer footer footer';
+    'nav main main'
+    'nav otherOptions otherOptions'
+    'nav pic pic'
+    'nav footer footer';
 
     grid-template-columns: 2fr 13fr;
 }

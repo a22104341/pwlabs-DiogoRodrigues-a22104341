@@ -30,7 +30,7 @@ body{
 }
 
 .img-paragraph .paragraph{
-    color: yellow;
+    color: darkred;
     position: absolute;
     top: 0;
     left: 0;
@@ -144,7 +144,7 @@ body{
     width: 200px;
 
     border-style:inset;
-    border-color: goldenrod;
+    border-color: darkred;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -165,7 +165,7 @@ body{
     font-size: 18px;
     background-color: grey;
     border-style: dashed;
-    border-color: goldenrod;
+    border-color: darkred;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,7 +191,7 @@ body{
 }
 
 .circle p{
-    color: goldenrod;
+    color: darkred;
     font-size: 28px;
     font-weight: bold;
 }
@@ -210,7 +210,7 @@ body{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    border:3px solid goldenrod;
+    border:3px solid darkred;
     background-color: rgb(29, 29, 29);
     z-index: 1;
     height: 22vh;
@@ -244,12 +244,12 @@ body{
 
 .item3{
     grid-area: main;
-    background-color: goldenrod;
+    background-color: darkred;
 }
 
 .item4{
     grid-area: otherOptions;
-    color: goldenrod;
+    color: darkred;
     background-image: url('../lab3/imagesLab3/roadBackGround.jpg');
     background-size:cover;
 }
@@ -262,18 +262,28 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
-    color: goldenrod;
+    color: darkred;
     grid-area: footer;
+}
+
+.itemPic{
+    grid-area: pic;
+}
+
+.item5 a{
+    text-decoration: none;
+    color: darkred;
 }
 
 .grid-container{
     display: grid;
     grid-template-areas: 
 
-    'nav header header'
-    'main main main'
-    'otherOptions otherOptions otherOptions'
-    'footer footer footer';
+    'header header header header'
+    'main main main nav'
+    'main  main main pic'
+    'otherOptions otherOptions otherOptions otherOptions'
+    'footer footer footer footer';
 
-    grid-template-columns: 2fr 13fr;
+    grid-template-columns: 8fr 13fr 13fr 13fr;
 }
