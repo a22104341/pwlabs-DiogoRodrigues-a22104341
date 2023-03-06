@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgb(31, 29, 29);
+    background-color: pink;
     border-color: white;
     color: white
 }
@@ -144,7 +144,7 @@ body{
     width: 200px;
 
     border-style:inset;
-    border-color: goldenrod;
+    border-color: pink;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -165,7 +165,7 @@ body{
     font-size: 18px;
     background-color: grey;
     border-style: dashed;
-    border-color: goldenrod;
+    border-color: pink;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,7 +210,7 @@ body{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    border:3px solid goldenrod;
+    border:3px solid pink;
     background-color: rgb(29, 29, 29);
     z-index: 1;
     height: 22vh;
@@ -244,12 +244,12 @@ body{
 
 .item3{
     grid-area: main;
-    background-color: goldenrod;
+    background-color: pink;
 }
 
 .item4{
     grid-area: otherOptions;
-    color: goldenrod;
+    color: pink;
     background-image: url('../lab3/imagesLab3/roadBackGround.jpg');
     background-size:cover;
 }
@@ -262,7 +262,7 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
-    color: goldenrod;
+    color: pink;
     grid-area: footer;
 }
 
@@ -272,13 +272,10 @@ body{
 
 .grid-container{
     display: grid;
-    grid-template-areas: 
-
+    grid-template-areas:
     'nav header header'
-    'nav pic pic'
     'nav main main'
-    'nav otherOptions otherOptions'
+    'nav pic otherOptions'
     'footer footer footer';
-
-    grid-template-columns: 4fr 13fr 13fr;
+    grid-template-columns: 4fr  13fr 13fr;
 }

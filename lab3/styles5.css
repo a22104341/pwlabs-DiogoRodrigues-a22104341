@@ -266,19 +266,14 @@ body{
     grid-area: footer;
 }
 
-.itemPic{
-    grid-area: pic;
-}
-
 .grid-container{
     display: grid;
     grid-template-areas: 
 
     'nav header header'
-    'nav pic pic'
-    'nav main main'
-    'nav otherOptions otherOptions'
+    'main main main'
+    'otherOptions otherOptions otherOptions'
     'footer footer footer';
 
-    grid-template-columns: 4fr 13fr 13fr;
+    grid-template-columns: 2fr 13fr;
 }
