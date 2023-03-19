@@ -175,11 +175,3 @@ label[for="ham-menu"] { /* The X on the Menu */
 }
 
 /* menu button end */
-.Image1:hover + .clickedText{
-    display: block;
-}
-
-.clickedText{
-    display: none;
-    align-items: center;
-}

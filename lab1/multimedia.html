@@ -14,33 +14,49 @@
 
 <body>
     <header>
+        <div id="stickyHeader"></div>
         <h1>
             Ulm
         </h1>
+        <h2></div>Multimedia</h2></div>
 
-        <figure>
-            <img src="../images/Ulm.jpg" alt="Ulm">
-            <figcaption>This is a picture of Ulm</figcaption>
-        </figure>
     </header>
 
     <br>
 
     <nav>
-        <a href="../index.html">😊Introduction</a>
-        <a href="local.html">🗺️Localization</a>
-        <a href="multimedia.html">📷<b>Multimedia</b></a>
-        <a href="info.html">🧐<b>Information</a>
-        <a href="../lab2/html5-css.html">👨‍💻html5-css</a>
-        <a href="../lab2/quizz.html">📝Quizz</a>
-        <a href="../lab3/lab3index.html">📝Lab3</a>
-        <a href="/lab4/indexLab4.html">Lab4</a>
+        <input type="checkbox" id="ham-menu">
+        <label for="ham-menu">
+        <div class="hide-des">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </div>
+
+
+        </label>
+
+        <div class="full-page-green"></div>
+        <div class="ham-menu">
+        <ul class="centre-text bold-text">
+            <a href="../index.html">😊Introduction</a>
+            <a href="/lab1/local.html">🗺️Localization</a>
+            <details><summary>📷Multimedia</summary><div style="margin-left:22px ;"><a href="#1">Video</a><br><a href="#2">Photographs</a><br><a href="#3">Poem</a>
+                <a name="1" id="1"></a></div></details>
+            <a href="../lab1/info.html">🧐Information</a>
+            <a href="/lab2/html5-css.html">👨‍💻html5-css</a>
+            <a href="/lab2/quizz.html">📝Quizz</a>
+            <a href="/lab3/lab3index.html">✈️Transport to other Cities</a>
+            <a href="/lab4/indexLab4.html">🦸Lab4</a>
+        </ul>
+        </div>
     </nav>
 
     <main>
-        <h2>Multimedia</h2>
-        <a href="#1">Video</a><br><a href="#2">Photographs</a><br><a href="#3">Poem</a>
-        <a name="1" id="1"></a>
+       
         <p>
             This is a video of someone visiting Ulm
         </p>
@@ -51,15 +67,30 @@
             allowfullscreen></iframe>
 
         <a name="2" id="2"></a>
+        <br><br><br><br>
         <h3>Photographs</h3>
-        <p>
-            <a target="foto" href="../images/ulm1_grande.jpg"><img src="../images/ulm1_pequeno.png" alt="Ulm1"></a>
-            <a target="foto" href="../images/ulm2_grande.jpg"><img src="../images/ulm2_pequeno.png" alt="Ulm2"></a>
-            <a target="foto" href="../images/ulm3_grande.png"><img src="../images/ulm3_pequeno.png" alt="Ulm3"></a>
-            <a target="foto" href="../images/ulm4_grande.png"><img src="../images/ulm4_pequeno.png" alt="Ulm4"></a>
-        </p>
+        <br>
+        <section>
+            <div class="small_images">
+                <a href="../images/ulm1_grande.jpg" target="foto" class="Image1">
+                    <img src="../images/ulm1_pequeno.png" alt="Picture Of Ulm" loading="lazy">
+                </a>
+                <a href="../images/ulm2_grande.jpg" target="foto">
+                    <img src="../images/ulm2_pequeno.png" alt="Other Pic2" loading="lazy">
+                </a>
+                <a href="../images/ulm3_grande.png" target="foto">
+                    <img src="../images/ulm3_pequeno.png" alt="OtherPic3" loading="lazy">
+                </a>
+                <a href="../images/ulm4_grande.png" target="foto">
+                    <img src="../images/ulm4_pequeno.png" alt="OtherPic4" loading="lazy">
+                </a>
+
+            </div>
+            <iframe class="default-margin-top" width="600px" height="400px" name="foto"></iframe>
+        </section>
 
         <a name="3" id="3"></a>
+        <br><br><br><br>
         <h3>Poem</h3>
 
         <br>
